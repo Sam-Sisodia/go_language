@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 // slices
 // most use in go
@@ -59,6 +62,11 @@ func main (){
 	fmt.Println("Copied elements count:", newtxt)
 	fmt.Println("Another slice:", anoterslice)
 
+
+	// compare 2 slices 
+	var num1 = []int {1,2}
+  var num2  = []int {1,2}
+	fmt.Println( slices.Equal(num1,num2))
 
 
 }
